@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee 
+        https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd"
+	version="5.0">
+
+	<welcome-file-list>
+		<welcome-file>temphomepage.jsp</welcome-file>
+	</welcome-file-list>
+
+	<servlet>
+		<servlet-name>registerServlet</servlet-name>
+		<servlet-class>Servlet.registerServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>registerServlet</servlet-name>
+		<url-pattern>/registerServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>loginServlet</servlet-name>
+		<servlet-class>Servlet.loginServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>loginServlet</servlet-name>
+		<url-pattern>/loginServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>BookingServlet</servlet-name>
+		<servlet-class>Servlet.BookingServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>BookingServlet</servlet-name>
+		<url-pattern>/BookingServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>UploadHotelServlet</servlet-name>
+		<servlet-class>Servlet.UploadHotelServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UploadHotelServlet</servlet-name>
+		<url-pattern>/UploadHotelServlet</url-pattern>
+	</servlet-mapping>
+	<servlet>
+        <servlet-name>FeedbackServlet</servlet-name>
+        <servlet-class>FeedbackServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>FeedbackServlet</servlet-name>
+        <url-pattern>/FeedbackServlet</url-pattern>
+    </servlet-mapping>
+	<servlet>
+		<servlet-name>FeedInsert</servlet-name>
+		<servlet-class>com.customer.FeedInsert</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>FeedInsert</servlet-name>
+		<url-pattern>/insert</url-pattern>
+	</servlet-mapping>
+	
+	
+ 
+
+</web-app>
